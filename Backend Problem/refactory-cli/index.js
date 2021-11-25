@@ -19,7 +19,7 @@ async function main(){
         }
     }
     
-main().catch(console.error);
+
 
 
 async function findOneListingByName(client) {
