@@ -11,6 +11,6 @@ JSON manipulation are on **JSON Manipulation** folder, all the problems were ans
 ## 3.1 OAuth Authentication and Database Data Insertion
 Can be found on **Backend Problem** folder
 ## 3.2 CLI App
-Can be found on **Backend/refactory-cli** folder
+Can be found on **Backend Problem/refactory-cli** folder
 ## 3.3 Flowchart
-Can be found on **Backend/refactory-flowchart** folder
+Can be found on **Backend Problem/refactory-flowchart** folder
