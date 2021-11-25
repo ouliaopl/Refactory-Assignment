@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-// const {MongoClient} = require('mongodb');
 const program = require('commander');
 const {
     main

@@ -1,11 +1,4 @@
-// const mongoose = require('mongoose')
-// mongoose.Promise = global.Promise;
-// const program = require('commander');
 const {MongoClient} = require('mongodb');
-
-// const db = mongoose.connect('mongodb+srv://opl:12345@cluster0.rq03g.mongodb.net/loginData?retryWrites=true&w=majority',{
-//     useMongoClient: True
-// });
 
 async function main(){
 
@@ -13,10 +6,10 @@ async function main(){
          const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
      
         try {
-            // Connect to the MongoDB cluster
+
             await client.connect();
      
-            // Make the appropriate DB calls
+
             await  findOneListingByName(client);
      
         } catch (e) {
@@ -37,7 +30,6 @@ async function findOneListingByName(client) {
         ).sort({ _id: 1 })
         .limit(10);
     const results = await cursor.toArray();
-    // console.log(results)
     if (results.length > 0) {
         console.log(`Found data(s):`);
         results.forEach((result, i) => {
@@ -55,27 +47,4 @@ async function findOneListingByName(client) {
 module.exports = {
     main
 }
-
-    // .findOne({ name: nameOfListing });
-
-    // if (result) {
-    //     console.log(`Found datas in the collection with the credentials '${nameOfListing}':`);
-    //     console.log(result);
-    // } else {
-    //     console.log(`No listings found with the name '${nameOfListing}'`);
-    // }
-    // console.log(result)
-
-
-// program
-//  .version('1.0.0')
-//  .description('Retrieving All Google Login Data')
-
-// program
-// .command('get-login-data')
-// .alias('gld')
-// .description('Retrieving All Google Login Data')
-// .action()
-
-//  program.parse(process.argv);
 
