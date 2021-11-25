@@ -8,6 +8,7 @@ Logic tests are on **Logic Test** folder, each problems are on different files a
 JSON manipulation are on **JSON Manipulation** folder, all the problems were answered in one file
 
 # 3. Backend Problem
+*Installing mongoDB is mandatory for all the functions to be working (e.g. saving to db and cli app), since mongoDB atlas is used as the database in this two apps
 ## 3.1 OAuth Authentication and Database Data Insertion
 Can be found on **Backend Problem** folder
 
