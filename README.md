@@ -10,7 +10,17 @@ JSON manipulation are on **JSON Manipulation** folder, all the problems were ans
 # 3. Backend Problem
 ## 3.1 OAuth Authentication and Database Data Insertion
 Can be found on **Backend Problem** folder
+
+cd Backend Problem
+run terminal :
+ - npm install
+ - npm run dev
 ## 3.2 CLI App
 Can be found on **Backend Problem/refactory-cli** folder
+
+cd Backend Problem/refactory-cli
+run terminal :
+ - npm link
+ - refactory-cli gld
 ## 3.3 Flowchart
 Can be found on **Backend Problem/refactory-flowchart** folder
